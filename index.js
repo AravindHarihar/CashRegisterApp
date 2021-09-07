@@ -2,6 +2,7 @@ const amountPaid = document.querySelector("#amount-paid");
 const billAmount = document.querySelector("#bill-amount");
 const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
+const noOfNotes = document.querySelectorAll(".number-of-notes");
 
 const denominations = [2000, 500, 200, 100, 50, 20, 10]
 // console.log("Amount Paid", amountEntered.value);
@@ -24,7 +25,9 @@ checkButton.addEventListener("click", function validateBillAndCashAMount(){
 
 function calculateNotes(change){
     for(i=0; i<denominations.length; i++){
-
+        numberOfNotes = Math.trunc(change / denominations[i]);
+        change = change % denominations[i];
+        noOfNotes[i].innerHTML = numberOfNotes;
     }
 }
 
