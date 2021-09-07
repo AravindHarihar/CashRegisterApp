@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cash Register</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Enter Amount Paid</h2>
+        <input id="amount-paid" type="text"  placeholder="Enter the amount paid by customer"> </input>
+
+        <h2>Enter the Bill amount</h2>
+        <input id="bill-amount" type="text"> </input>
+        <br>
+        <button id="check-button" onchange=""> CHECK</button>
+        <br>
+        <p id="error-message"></p>
+        <br>
+
+        <table border="1px">
+            <tr>
+                <th>Number of notes</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Denomination</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>200</td>
+                <td>100</td>
+                <td>50</td>
+                <td>20</td>
+                <td>10</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+<script src="/index.js" defer></script>
+
+
+</html>
