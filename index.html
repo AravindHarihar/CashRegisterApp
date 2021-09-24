@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     
     <title>Cash Register</title>
 </head>
 <body>
 
-    <div class="container">
+    <nav class="navigation container">
+        <div class="navBrand">Aravind Harihar</div>
+    </nav>
+
+    <div class="container container-center section ow">
 
         <h2>Enter Amount Paid</h2>
         <input id="amount-paid" type="text"  placeholder="Enter the amount paid by customer"> </input>
@@ -17,7 +22,7 @@
         <h2>Enter the Bill amount</h2>
         <input id="bill-amount" type="text"> </input>
         <br>
-        <button id="check-button" onchange=""> CHECK</button>
+        <button id="check-button" class="primary-link" onchange=""> CHECK</button>
         <br>
         <p id="error-message"></p>
         <br>
@@ -46,6 +51,15 @@
         </table>
 
     </div>
+
+    <footer class="footer">
+        <div class="footer-header">You can find me on</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline "><a class="link" href="https://github.com/AravindHarihar">GitHub</a></li>
+            <li class="list-item-inline "><a class="link" href="https://twitter.com/aravindharihar">Twitter</a></li>
+
+        </ul>
+    </footer>
 
 </body>
 <script src="/index.js" defer></script>
