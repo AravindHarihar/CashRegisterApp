@@ -4,7 +4,7 @@ const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".number-of-notes");
 
-const denominations = [2000, 500, 200, 100, 50, 20, 10]
+const denominations = [2000, 500, 200, 100, 50, 20, 10, 5, 1]
 // console.log("Amount Paid", amountEntered.value);
 // console.log("Bill amount", billAmount.value);
 // console.log(checkButton.value);
