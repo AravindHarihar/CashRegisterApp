@@ -10,8 +10,8 @@ const denominations = [2000, 500, 200, 100, 50, 20, 10, 5, 1]
 // console.log(checkButton.value);
 
 checkButton.addEventListener("click", function validateBillAndCashAMount(){
-    if(amountPaid.value > 0){
-        if(amountPaid.value >= billAmount.value){
+    if(Number(amountPaid.value) > 0){
+        if(Number(amountPaid.value) >= Number(billAmount.value)){
             const changeToBeGiven = amountPaid.value - billAmount.value;
             calculateNotes(changeToBeGiven)
         }else{
